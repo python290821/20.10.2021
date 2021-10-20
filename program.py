@@ -16,28 +16,52 @@ print(f'circle radius {radius}, area: {circle_area}')
 print(f'circle radius {radius}, hekef: {circle_hekef}')
 
 def calcMalbenArea(width, height):
-    pass # width * height
+    return width * height
 
 def calcMalbenHekef(width, height):
-    pass # 2 * width + 2 * height
-# input from user float radius -- print the hekef and area
-# input from user width and height -- print the area and hekef
+    return 2 * width + 2 * height
+
+w = float(input('please enter malben width [f]: '))
+h = float(input('please enter malben height [f]: '))
+print(f'malben area: {calcMalbenArea(w, h)}')
+print(f'malben hekef: {calcMalbenHekef(w, h)}')
 
 def even_or_odd(x):
-    pass # return 'even' if even or 'odd'
+    # return 'even' if x % 2 == 0 else 'odd'
+    if x % 2 == 0:
+        return 'even'
+    else:
+        return 'odd'
+print(f'8 is {even_or_odd(8)}')
+print(f'7 is {even_or_odd(7)}')
 
 def get_factorial(x):
-    pass # return factorial atzret . x = 5 => 1 * 2 * 3 * 4 * 5
+    atz = 1
+    for i in range(2, x + 1):
+        atz *= i
+    return atz
 
-def check_equal():
+print(f'5! = {get_factorial(5)}')
+
+def check_equal(x, y = 0):
+    # return x == y
+    if x == y:
+        return True
+    else:
+        return False
     # get two parameters
-    # if they are equal return True otherwise false
+    # if they are equal return True otherwise False
     # if only 1 number was sent then compare it to zero
-    pass #
 
-def get_full_name():
+print(f'1 == 1 {check_equal(1, 1)}')
+print(f'2 == 1 {check_equal(2, 1)}')
+print(f'3 == 0 {check_equal(3)}')
+print(f'0 == 0 {check_equal(0)}')
+
+def get_full_name(fname = 'John', lname = 'Doe'):
     # get two parameters: fname , lname
     # if i.e. avi levi was sent return 'avi levi'
     # if i.e. only fname was send return 'avi doe'
     # if t.e. none was send return 'john doe'
-    pass
+    return f'{fname} {lname}'
+
