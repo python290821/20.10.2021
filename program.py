@@ -1,4 +1,5 @@
-
+#import math
+#math.pi
 def getCircleArea(radius):
     pass # pi (3.14) * radius baribua
 
@@ -10,5 +11,5 @@ def calcMalbenArea(width, height):
 
 def calcMalbenHekef(width, height):
     pass # 2 * width + 2 * height
-# input from user radius -- print the hekef and area
+# input from user float radius -- print the hekef and area
 # input from user width and height -- print the area and hekef
