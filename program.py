@@ -1,7 +1,13 @@
-#import math
-#math.pi
+import math
+
 def getCircleArea(radius):
-    pass # pi (3.14) * radius baribua
+    #_area = 3.14 * radius ** 2
+    _area = math.pi * radius ** 2
+    return _area
+
+print(f'pi = {math.pi}')
+radius = float(input('please enter radius [f]: '))
+area = getCircleArea(radius)
 
 def getCircleHekef(radius):
     pass # 2 * pi (3.14) * radius
