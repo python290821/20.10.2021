@@ -38,6 +38,6 @@ def check_equal():
 def get_full_name():
     # get two parameters: fname , lname
     # if i.e. avi levi was sent return 'avi levi'
-    # if i.e. only fname was send return 'avi doh'
-    # if t.e. none was send return 'john doh'
+    # if i.e. only fname was send return 'avi doe'
+    # if t.e. none was send return 'john doe'
     pass
